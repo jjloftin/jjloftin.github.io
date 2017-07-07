@@ -27,6 +27,7 @@ button.navbar-btn
 }
 #Portfolio
 {
+  box-shadow: 0 0 2rem rgba(50,50,0,.5);
   background: #272330;
 }
 #PorfolioTrue
@@ -53,4 +54,9 @@ i
 .col > .thumbnail {
   color:  #B7CECE;
   border: 1px;
+}
+
+i{
+    color:  #B7CECE;
+
 }
