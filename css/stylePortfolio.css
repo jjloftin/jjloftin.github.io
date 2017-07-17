@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+
+
+.navbar-brand {
+  font-family:'Bilbo';
+}
+
+body {
+  background: #B33951;
+  color: white;
+}
+
+.navbar {
+  margin:0;
+  border-radius:0;
+}
+
+.frame{
+  background: rgba(0,0,0,0.5);
+    padding: 5;
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 5%;
+    min-height: 20%;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+  
+}
+.outter {
+  background-image: url("../assets/bg.jpg");
+    background-color: #17234E;
+    margin-left:100;
+    margin-top: 0;
+    margin-bottom: 0;
+    min-height: 20%;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.page-header{
+  padding:40px;
+  size: full;
+  color:white;
+    
+}
+.page-header small{
+  color:white;
+}
+
+#Portfolio{
+  color: black;
+  background: white;
+  font-family: Inconsolata;
+}
+#Portfolio h1 {
+  color: black;
+}
+#middle .page-header{
+  color: black;
+}
+
+.wiki {
+  margin-bottom:20px;
+}
+img {
+  max-height: 140px;
+}
+
+footer {
+  padding: 40px;
+  color:white;
+
+}
+i {
+  padding: 20px;
+}
+
+footer a,  footer a:visited, footer a:hover, footer a:active, a[href^='mailto:'] {
+  color: white
+}
+

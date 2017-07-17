@@ -2,105 +2,106 @@
 <html >
 <head>
   <meta charset="UTF-8">
-  <title>portfolioPage</title>
+  <title>The Home Page of John Loftin</title>
   
   
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
 <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
 
-      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/stylePortfolio.css">
 
   
 </head>
 
 <body>
-  <html>
-  <head>
-    <title>Portfolio of John Loftin</title>
-  </head>
-<body>
-<div class = 'container-fluid'>
-  <nav class = 'navbar navbar-default navbar-fixed-top'>
-    <a href = '#About'><button id = 'toAbout' class = 'btn btn-default navbar-btn'>about</button></a>
-    <a href = '#Portfolio'><button id = 'toPortfolio' class = 'btn btn-default navbar-btn'>portfolio</button></a>
-    <a href = '#Contact'><button id = 'toContact' class = 'btn btn-default navbar-btn'>contact</button></a>
-  </nav>
-</div>  
-  <div id = 'About' class = 'jumbotron'>
-    <div class = 'container-fluid'>
-    <div class = 'row'>
-      <div class = 'col-xs-12 col-sm-8 col-sm-offset-2 text-center'>
-        <hr>
-        <h1><strong>about</strong></h1>
-        <hr>
-      </div>
+   <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand">J.J.Loftin</a>
     </div>
-    <div class = 'row'>
-      
-      <div class = 'col-xs-12 col-sm-2 col-sm-offset-2 col-sm-push-6'>
-        <img class  = 'img-responsive' src = 'assets/me.jpg'>
-    </div>
-      <div class = 'col-xs-12 col-sm-6 col-sm-offset-2 col-sm-pull-4'>
-        <p><small>Graduated May 2017 from the University of Texas at Austin <br>B.S. in Physics and Mathematics with Elements of Computing Certification<br>Here are some of the the technologies I've used:</small>
-         
-   </p>
-        <ul>
-          <li>Python</li>
-          <li>Javascript - including jQuery</li>
-          <li>HTML/CSS - including Bootstrap</li>
-          <li>MATLAB</li>
-          <li>OracleSQL and mySQL</li>
-          <li>mongoDB</li>
-        </ul>
-    </div>
-    </div>
-  </div>
-  </div>
-  <div id = 'Portfolio' class = 'jumbotron'>
-    <div class = 'container-fluid'>
-    <div class = 'row text-center'>
-      <div class = 'col-xs-12 col-sm-8 col-sm-offset-2'>
-        <hr>
-        <h2>portfolio</h2>
-        <hr>
-      </div>
-    </div>
-    <div class = 'row text-center'>
-      <div class = 'col-xs-12 col-sm-6 col-sm-offset-3'>
-        <img src = 'assets/lincolnQuoteGenerator.png' class = 'center-block img-responsive'>
-          <ul class = 'text-left'>
-              <li>Stored JSON document of quotes. Generates random quote and background color on reload</li>
-              <li>Allows user to post quotes to Twitter</li>
-          </ul>
-        <img src = 'assets/weatherReport.png' class = 'img-responsive'>
-      </div>
 
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#About">About <span class="sr-only"></span></a></li>
+        <li><a href="#Portfolio">Portfolio<span class = "sr-only"></span></a></li>
+        <li><a href="#Contact">Contact<span class = "sr-only"></span></a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class = 'container-fluid outter'>
+<div class = 'container-fluid frame text-center' id = 'About'>
+
+  <h1 class = "page-header"> J.J. Loftin<small> Scientific Programmer. Front-End Developer.</small></h1>
+  <div class = 'row text-justify'>
+    <div class = "col-xs-12 col-md-4">
+      <p>I am a May 2017 graduate of The University of Texas at Austin. I recieved my B.S. in Physics and Mathematics, and I also recieved an Elements of Computing Certification.
     </div>
+        <div class = "col-xs-12 col-md-4">
+      <p>As an undergraduate research assistant and as a research technician I used programming to solve my tasks. I automated experiments using LabView. I used Python and Matlab to implement statistical and numerical analysis techniques like Monte Carlo simulations. I love programming and web design work because it satisifies  both my creative and analytical sides
     </div>
-   </div>
-  <div id = 'Contact' class = 'jumbotron'>
-    <div class = 'container-fluid'>
-    <div class = 'row text-center'>
-      <div class = 'col-xs-12 col-sm-8 col-sm-offset-2'>
-        <hr>
-        <h1> contact </h1>
-        <hr>
-      </div>
-      <div class = 'col-xs-12 col-sm-8 col-sm-offset-2 text-center'>
-        <p>I am currently seeking new opportunities. Please feel free to contact me.</p> 
-          <a href = 'https://www.github.com/jjloftin'><i class = 'fa fa-github fa-5x'></i></a>
-          <a href = 'https://www.linkedin.com/in/jjloftin'><i class = 'fa fa-linkedin fa-5x'></i></a>
-          <a href="mailto:johnloftin@utexas.edu" target="_top"><i class = 'fa fa-envelope-o fa-5x'></i></a>
-      </div>
-    </div> 
+        <div class = "col-xs-12 col-md-4">
+      <p>Inside and outside of the classroom I have used a number of programming technologies...</p>
+          <ul style = "list-style: none;">
+            <li><b>Python</b></li>
+            <li><b>Javascript</b> - including <b>jQuery</b></li>
+            <li><b>HTML/CSS</b> - including </b>Bootstrap</b></li>
+  <li><b>mySQL</b> and <b>Oracle SQL</b></li>
+            </ul></b>
+<p>A copy of my resume can be found <b><a href = 'assets/resume.pdf' target = '_blank'>here.</a></b></p>
     </div>
+
   </div>
-   
-</body>
-</html>
+
+</div>
+</div>
+<div class = 'container text-center' id = "Portfolio">
+  <h1 class = "page-header">Portfolio</h1>
+  <p class = 'leading-text'>A sample of my work</p>
+  <div class = 'row'>
+    <div class = 'col-md-4'>
+      <div class = 'thumbnail'>
+ 
+       <img class = 'img-responsive wiki' src="https://preview.ibb.co/c8prxv/wiki_Viewer.png" alt="wiki_Viewer" border="0">
+        <div class = 'caption'><h3>Wikipedia Viewer</h3><p>Using a search term, this application produces an API call and returns article previews that match the search term</p><p><a href='wiki.html' target = '_blank' class = 'btn btn-primary'>View More</a> <a href ='https://codepen.io/jjloftin/pen/gRvXGE' target = '_blank' class = 'btn btn-default'>Code</a></p></div>
+      </div>
+    </div>
+     <div class = 'col-md-4'>
+      <div class = 'thumbnail'>
+        <img class = 'img-responsive' src="https://preview.ibb.co/gGMtAF/weather_Report.png" alt="weather_Report" border="0">
+        <div class = 'caption'><h3>Weather App</h3><p>A local weather application that uses HTML5 Geolocation functionality and the Dark Sky Weather API. Background indicates current weather conditions.</p><p><a href='weather.html' target = '_blank' class = 'btn btn-primary'>View More</a> <a href ='https://codepen.io/jjloftin/pen/ZyvMej' target = '_blank' class = 'btn btn-default'>Code</a></p></div>
+      </div>
+    </div>
+     <div class = 'col-md-4'>
+      <div class = 'thumbnail'>
+        <img class = 'img-responsive' src="https://preview.ibb.co/cNTUja/lincoln_Quote_Generator.png" alt="lincoln_Quote_Generator" border="0">
+        <div class = 'caption'><h3>Abe Lincoln Quote Generator</h3><p>Randomly generates an Abraham Lincoln Quotation and its source stored in JSON file. Allows user to post their favorite quotations to Twitter.</p><p><a href='quote.html' target = '_blank' class = 'btn btn-primary'>View More</a> <a href ='https://codepen.io/jjloftin/pen/jwagjX' target = '_blank' class = 'btn btn-default'>Code</a></p></div>
+      </div>
+    </div>
+ </div>
+</div>
+<div class = "container-fluid text-center" id = 'Contact'>
+<footer>
+  <a href = 'https://www.github.com/jjloftin' target = '_blank'><i class = 'fa fa-github-square fa-5x'></i></a>
+  <a href = 'https://www.linkedin.com/in/jjloftin' target = '_blank'><i class = 'fa fa-linkedin-square fa-5x'></i></a>
+  <a href = 'mailto:johnloftin@utexas.edu' target = '_blank'><i class = 'fa fa-envelope-square fa-5x'></i></a>
+  <p>Currently seeking new and exciting opportunities</p>
+  <p><small>Written by John Loftin</small></p>
+</footer>
+</div>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
 
-    <script src="js/index.js"></script>
-
+  
 </body>
 </html>

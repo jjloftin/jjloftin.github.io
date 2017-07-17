@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Cutive+Mono|Monoton');
+
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Cutive Mono';
+}
+h1 {
+  font-family: 'Monoton';
+}
+
+.container-fluid{
+    background-image: url('https://static.pexels.com/photos/11434/Life-of-Pix-free-stock-photos-sunset-sea-light-mikewilson.jpeg');
+  background-size: 100% 100%;
+  padding: 5%;
+}
+
+
+.display {
+  padding: 5%;
+  background-color: rgba(0,0,0,0.65);
+  color: white;
+}
+
