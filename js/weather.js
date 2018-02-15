@@ -68,10 +68,10 @@ function bearingToCardinal(bearing){
 
 
 
-//write the API call to the Dark Sky API 
+//write the API call to the FCC Weather API
 function writeWeatherAPICall(lat,long) {
-  var req = ' https://crossorigin.me/https://api.darksky.net/forecast/15d42c6d53967eb1e6e6ef985f329a21/';
-  req += lat + ',' + long;
+  var req = 'https://fcc-weather-api.glitch.me/api/current?lat='
+  req += lat + '&lon=' + long;
   return req; 
 }
 
@@ -89,19 +89,20 @@ function displayWeather (call) {
 //https://darksky.net/dev/docs/
 function writeWeather(json) {
   
+ 
   
   //write current weather in display panel
-  $("#location").html(json.latitude + '&deg; LAT,<br>' + json.longitude + '&deg; LON');
-  $("#tempNum").html(Math.round(Number(json.currently['temperature'])));
-  $("#condition").html(json.currently['summary'] + '<br>');
-  $("#wind-speed").html('Wind:<br>' + json.currently['windSpeed'] + ' mph<br>');
-  $("#wind-speed").append(bearingToCardinal(Number(json.currently['windBearing'])));
+  $("#location").html(json.coord.lat + '&deg; LAT,<br>' + json.coord.lon + '&deg; LON');
+  $("#tempNum").html(Math.round(Number(json.main.temp)));
+  $("#condition").html(json.weather[0].description + '<br><img src =' + json.weather[0].icon + "'><br>");
+  $("#wind-speed").html('Wind:<br>' + json.wind.speed+ ' mph<br>');
+  $("#wind-speed").append(bearingToCardinal(Number(json.wind.deg)) + '<br>');
   
   //lookup lat and long and make it into location
   
   //place background
-  var bg = json.currently['icon'];
-  $(".container-fluid").css("background-image", 'url(' + iconDict[bg] + ')');
+  //var bg = json.currently['icon'];
+  //$(".container-fluid").css("background-image", 'url(' + iconDict[bg] + ')');
   
   
 };
