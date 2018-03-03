@@ -39,7 +39,9 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     -webkit-background-size: cover;
-    background-size: cover;
+    background-size: cover;  
+    background-attachment: fixed;
+
 }
 .page-header{
   padding:40px;
